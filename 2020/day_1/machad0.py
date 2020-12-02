@@ -2,7 +2,7 @@ from functools import reduce
 from itertools import combinations
 from operator import mul
 
-with open('../inputs/day1.txt') as f:
+with open('../inputs/machad0_day1.txt') as f:
     input = [int(l.strip()) for l in f]
 
 _head = lambda seq: list(seq)[0]
