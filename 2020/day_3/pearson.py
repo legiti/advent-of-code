@@ -31,13 +31,10 @@ def get_tree_count_pt_2():
             for route in down_1_routes.keys():
                 path = (int(route) * line_count) % 31
                 if line[path] == '#':
-                    print(f'hit a tree at index {path} in {line} for route {route}')
                     down_1_routes[route] = down_1_routes[route] + 1
             line_count = line_count + 1
     tree_counts = list(down_1_routes.values())
     tree_counts.append(tree_count_down_2)
-    print(tree_counts)
-    print(tree_count_down_2)
     return math.prod(tree_counts)
 
 
